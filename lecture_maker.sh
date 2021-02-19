@@ -1,11 +1,36 @@
-#!/bin/sh
-
-# TODO:
-# добавить автоматическую нумерацию файлов
-
 TODAY=`date '+%d.%m.%Y'`
 CURRENT=`pwd`
 BASENAME=`basename "$CURRENT"`
 NAME="${BASENAME}_${TODAY}.md"
 
-echo "# ${TODAY}" > $NAME
+is_sem=0
+is_lec=0
+
+if [[ ! -e $NAME ]]
+then
+  if [[ $# -ne 0 ]]
+  then
+    case $1 in
+      l|lec) is_lec=1 ;;
+      s|sem) is_sem=1 ;;
+    esac
+  else
+    echo -e "No args supplied \U1F974 --> Creating lection note \U1F4D1"
+    echo -e "# Лекция ${TODAY}\n" > $NAME
+  fi
+
+  if [[ $is_lec -eq 1 ]]
+  then
+    echo -e "Creating lection note \U1F4D1"
+    echo -e "# Лекция ${TODAY}\n" > $NAME
+  elif [[ $is_sem -eq 1 ]]
+  then
+    echo -e "Creating seminar note \U1F4C3"
+    echo -e "# Семинар ${TODAY}\n" > $NAME
+  fi
+  
+else
+  echo "File already exists --> opening it"
+fi
+
+typora $NAME & exit
