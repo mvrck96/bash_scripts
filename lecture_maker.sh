@@ -42,7 +42,7 @@ then
     echo -e "# ${SUBJECT} семинар ${TODAY}\n" > $NAME
   fi
 else
-  echo "File already exists --> opening it"
+  echo -e "File already exists --> opening it \U1F4E6"
 fi
 
 typora $NAME & exit
