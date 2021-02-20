@@ -10,7 +10,6 @@ declare -A SUBJECT_DICT=(["English"]="Английский язык"
                          ["Mat_models"]="Мат модели"
                          ["ML2"]="ML2"
                          ["Product"]="Аналитика ИТ продуктов"
-                         ["lecture_maker_script"]="Все правильно !"
                          ["Web"]="Web технологии")
 
 SUBJECT=${SUBJECT_DICT[$BASENAME]}
