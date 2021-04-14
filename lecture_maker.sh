@@ -9,6 +9,7 @@ declare -A SUBJECT_DICT=(["English"]="Английский язык"
                          ["Inf_processing"]="Обработка информации"
                          ["Mat_models"]="Мат модели"
                          ["ML2"]="ML2"
+                         ["ML1"]="ML1"
                          ["Product"]="Аналитика ИТ продуктов"
                          ["Web"]="Web технологии")
 
