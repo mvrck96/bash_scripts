@@ -75,7 +75,7 @@ cover:
 Для вызова надо передать название поста или ничего. Если передано ничего, то будет создана директория `draft_post_TIMESTAMP`. Пример вызова:
 
 ```bash
-user@host:~$ maverick@eiger:~/bash_scripts$ ./post_maker.sh my-best-title
+user@host:~$ ./post_maker.sh my-best-title
 user@host:~$ tree
 .
 └── my-best-title
