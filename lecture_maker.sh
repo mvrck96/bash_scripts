@@ -1,4 +1,4 @@
-TODAY=`date '+%d.%m.%y'`
+TODAY=`date '+%d-0%m-%y'`
 LECTION_FLAG=0
 NAME="initial_name"
 
