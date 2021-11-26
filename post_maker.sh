@@ -8,6 +8,8 @@ title: \"$1\"
 draft: true
 tags: [\"TAGS_HERE\"]
 summary: \"SUMMARY HERE, will be displayed under title\"
+keywords:
+- word1
 cover:
     image: \"pics/COVER_IMAGE.PNG\"
     relative: true
