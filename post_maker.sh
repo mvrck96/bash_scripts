@@ -8,11 +8,16 @@ title: \"$1\"
 draft: true
 tags: [\"TAGS_HERE\"]
 summary: \"SUMMARY HERE, will be displayed under title\"
-cover:
-    image: \"pics/COVER_IMAGE.PNG\"
-    relative: true
-    alt: \"ALT TEXT HERE\"
-    caption: \"CAPTION HERE\"
+lang: ru
+
+#cover:
+#    image: \"pics/COVER_IMAGE.PNG\"
+#    relative: true
+#    alt: \"ALT TEXT HERE\"
+#    caption: \"CAPTION HERE\"
+
+description: \" Description that will be visible only in html tags\"
+author: \"Maverick\"
 ---"
 
 if [[ $# -ne 0 ]]; then
