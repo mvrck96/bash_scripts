@@ -8,6 +8,7 @@ title: \"$1\"
 draft: true
 tags: [\"TAGS_HERE\"]
 summary: \"SUMMARY HERE, will be displayed under title\"
+<<<<<<< HEAD
 keywords:
 - word1
 cover:
@@ -15,6 +16,18 @@ cover:
     relative: true
     alt: \"ALT TEXT HERE\"
     caption: \"CAPTION HERE\"
+=======
+lang: ru
+
+#cover:
+#    image: \"pics/COVER_IMAGE.PNG\"
+#    relative: true
+#    alt: \"ALT TEXT HERE\"
+#    caption: \"CAPTION HERE\"
+
+description: \" Description that will be visible only in html tags\"
+author: \"Maverick\"
+>>>>>>> c7248e7aeb8e5edace7f748fe614de1dd4980bea
 ---"
 
 if [[ $# -ne 0 ]]; then
